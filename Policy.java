@@ -1,5 +1,6 @@
-/**TODO:: Method to calulate and return the policy holder BMI
-         MEthod to caluate the price of insurance policy
+/**TODO:: MEthod to caluate the price of insurance policy
+          Make demo program to display all info
+          must pass args when creqting obj, nut sure why, got it working fine without passing args
 */
 public class Policy{
       private int policyNumber, policyHolderAge;
@@ -41,6 +42,15 @@ public class Policy{
          policyHeightIn = 0;
          policyWeightLbs = 0;
       }
+      /**
+         This method calcualtes and returns the policy holders BMI
+         @param weight, policy holders weight
+         @param height, policy holders height
+      */
+      public double policyBMI(double weight, double height){
+         return (weight *703)/(height*height);
+      }
+      
       /**
          The setPolicyNum method stores the policy number in the 
          policyNumber field

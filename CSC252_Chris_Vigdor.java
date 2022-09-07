@@ -35,5 +35,14 @@ public class CSC252_Chris_Vigdor{
       obj.setPolicyWeight(keyboard.nextDouble());
       
       System.out.println("Policy number: "+ obj.getPolicyNum());
+      System.out.println("Provider Name: "+ obj.getProviderName());
+      System.out.println("Policyholder's First Name: "+ obj.getPolicyFName());
+      System.out.println("Policyholder's Last Name: "+ obj.getPolicyLName());
+      System.out.println("Policyholder's Age: "+ obj.getPolicyAge());
+      System.out.println("Policyholder's Smoking Status: " + obj.getSmokingStatus());
+      System.out.println("Policyholder's Height: "+ obj.getPolicyHeight() + " inches");
+      System.out.println("Policyholer's Weight: "+obj.getPolicyWeight() + " ponds");
+      System.out.printf("Policyholder's BMI: %.2f\n",  obj.policyBMI());
+      System.out.printf("Policy Price: $%,.2f\n",  obj.calculateInsuranceCost());
    }
 }

@@ -1,5 +1,4 @@
-/**TODO:: MEthod to caluate the price of insurance policy
-          Make demo program to display all info
+/**TODO:: format output and make sure grammar is correct
           must pass args when creqting obj, nut sure why, got it working fine without passing args
 */
 public class Policy{
@@ -47,9 +46,28 @@ public class Policy{
          @param weight, policy holders weight
          @param height, policy holders height
       */
-      public double policyBMI(double weight, double height){
-         return (weight *703)/(height*height);
+      public double policyBMI(){
+         return (policyWeightLbs *703)/(policyHeightIn*policyHeightIn);
       }
+      
+      /**
+         This method calulates and returns the cost of the insurance policy
+      */
+     public double calculateInsuranceCost(){
+         double baseFee = 600;
+         if(policyHolderAge > 50){
+            baseFee+=75;
+         }
+         if(policySmokingStatus.equalsIgnoreCase("smoker")){
+            baseFee+=100;
+         }
+         if(policyBMI() > 35){
+           baseFee+=(policyBMI() - 35) * 20;
+         }
+            return baseFee;
+      }
+      
+      
       
       /**
          The setPolicyNum method stores the policy number in the 

@@ -1,3 +1,10 @@
+/**
+Chris Vigdor
+09/13/2022
+Demo Program
+This porgram uses the Policy class i created to make an object to determine the insurance policy cost for a customer
+*/
+
 import java.util.Scanner;
 
 public class CSC252_Chris_Vigdor{
@@ -41,7 +48,7 @@ public class CSC252_Chris_Vigdor{
       System.out.println("Policyholder's Age: "+ obj.getPolicyAge());
       System.out.println("Policyholder's Smoking Status: " + obj.getSmokingStatus());
       System.out.println("Policyholder's Height: "+ obj.getPolicyHeight() + " inches");
-      System.out.println("Policyholer's Weight: "+obj.getPolicyWeight() + " ponds");
+      System.out.println("Policyholder's Weight: "+ obj.getPolicyWeight() + " ponds");
       System.out.printf("Policyholder's BMI: %.2f\n",  obj.policyBMI());
       System.out.printf("Policy Price: $%,.2f\n",  obj.calculateInsuranceCost());
    }

@@ -1,5 +1,5 @@
 /**TODO:: format output and make sure grammar is correct
-          must pass args when creqting obj, nut sure why, got it working fine without passing args
+          
 */
 public class Policy{
       private int policyNumber, policyHolderAge;
@@ -55,13 +55,15 @@ public class Policy{
       */
      public double calculateInsuranceCost(){
          double baseFee = 600;
-         if(policyHolderAge > 50){
+         final double ageLimit = 50;
+         final double bmiLimit = 35;
+         if(policyHolderAge > ageLimit){
             baseFee+=75;
          }
          if(policySmokingStatus.equalsIgnoreCase("smoker")){
             baseFee+=100;
          }
-         if(policyBMI() > 35){
+         if(policyBMI() > bmiLimit){
            baseFee+=(policyBMI() - 35) * 20;
          }
             return baseFee;

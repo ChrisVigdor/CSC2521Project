@@ -1,5 +1,7 @@
-/**TODO:: format output and make sure grammar is correct
-          
+/**
+Chris Vigdor
+09/12/2022
+Policy class
 */
 public class Policy{
       private int policyNumber, policyHolderAge;
